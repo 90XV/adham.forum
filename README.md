@@ -4,3 +4,9 @@ I made this repo because I keep procrastinating making my portfolio @ [adham.for
 ## Simplicity
 I do not know what features I will add but so far i think simple is best thats it.
 
+## Disclaimer
+Not 'built' by me just taking ideas and other people's code and making it to my taste.
+
+## Sources
+- [grain effect](https://forum.readymag.com/t/add-grain-effect-to-website/3906/3)
+- [card tilt effect](https://www.youtube.com/watch?v=x-7EAgNII50)

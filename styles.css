@@ -7,17 +7,40 @@ html,body{
 }
 
 body{
-    background-color: antiquewhite;
+    background: linear-gradient(180deg,rgba(255, 250, 148, 1) 0%, rgba(244, 229, 123, 1) 70%, rgba(217, 179, 63, 1) 98%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    min-height:100vh;
+    width: 100%;    
+}
+body:after{
+    animation: grain 8s steps(10) infinite;
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+    content: "";
+    height: 300%;
+    width: 300%;
+    left: -100%;
+    top: -110%;
+    opacity: 0.8;
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
 }
 .quintessential-regular {
   font-family: "Quintessential", serif;
   font-weight: 400;
   font-style: normal;
+}
+.container{
+    padding: 50px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction:column ;
+    margin-top: auto; margin-bottom:auto ;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
@@ -26,18 +49,21 @@ body{
     margin-top: auto; margin-bottom:auto ;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-    border: 1px solid black;
-    border-radius: 29px;
+
+    padding: 2rem;
+    border: 0px solid black;
+    border-radius: 32px;
     background-color: rgb(255, 249, 241);
-    box-shadow: 0 0 0 1px rgba(0,0,0,0,0.2);
-    transition: all 200ms ease-out;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.25s ease;
 }
 
 .hero-header {
     font-family:"Quintessential";
     font-size: 3rem;
     text-align: center;
+
 }
 
 .hero-p{
@@ -49,7 +75,9 @@ body{
 }
 
 footer{
-    font-size:0.75rem;
+    font-size:0.65rem;
     text-align: center;
     width: 100%;
+    color:black;
+    z-index: 1;
 }
