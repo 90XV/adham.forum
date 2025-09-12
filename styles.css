@@ -2,12 +2,17 @@
     margin:0;
     padding: 0;
 }
+html,body{
+    height: 100%;
+}
+
 body{
     background-color: antiquewhite;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 .quintessential-regular {
   font-family: "Quintessential", serif;
@@ -16,8 +21,17 @@ body{
 }
 
 .hero {
+    display: flex;
+    flex-direction:column ;
+    margin-top: auto; margin-bottom:auto ;
     align-items: center;
     justify-content: center;
+    padding: 3rem;
+    border: 1px solid black;
+    border-radius: 29px;
+    background-color: rgb(255, 249, 241);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0,0.2);
+    transition: all 200ms ease-out;
 }
 
 .hero-header {
@@ -27,11 +41,15 @@ body{
 }
 
 .hero-p{
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
     font-size:0.75rem;
-    position: fixed;
-    bottom:0;
+    text-align: center;
+    width: 100%;
 }
