@@ -18,5 +18,5 @@ container.addEventListener('mousemove',(e)=>{
 
 container.addEventListener('mouseleave', () =>{
     card.style.transform= `rotateX(0) rotateY(0)`;
-    card.style.boxShadow= `0 0 20px rgba(0,0,0,0.2)`;
+    card.style.boxShadow= `0 0 20px rgba(0,0,0,0)`;
 })
