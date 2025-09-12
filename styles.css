@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+}
+.hero-header {
+    font-family:"Quintessential";
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero-p{
+    text-align: center;
+}
+
+footer{
+    font-size:0.75rem;
+    position: fixed;
+    bottom:0;
+}
