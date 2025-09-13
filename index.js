@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-const card = document.querySelector('.hero');
+const card = document.querySelector('.hero'||'.cipherheader');
 
 container.addEventListener('mousemove',(e)=>{
     const rect = card.getBoundingClientRect();
