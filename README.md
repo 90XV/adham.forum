@@ -6,6 +6,7 @@ I do not know what features I will add but so far i think simple is best thats i
 
 ## Disclaimer
 Not 'built' by me just taking ideas and other people's code and making it to my taste.
+Code might even be terrible but I'm trying to learn here.
 
 ## Sources
 - [grain effect](https://forum.readymag.com/t/add-grain-effect-to-website/3906/3)
