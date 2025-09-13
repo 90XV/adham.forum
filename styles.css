@@ -76,3 +76,10 @@ body:after{
     font-size:0.65rem;
     text-align: center;
 }
+table{display: flex; flex-direction: row; flex-wrap: wrap;flex-shrink: auto;}
+
+table,tr,th,td{
+    font-family: "Serif";
+    border:solid black 2px;
+    padding: 2px; margin:2px;
+}
