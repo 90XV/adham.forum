@@ -18,20 +18,19 @@ body{
 a,a:visited{
     color:black;
 }
-
-body:after{
-    animation: grain 8s steps(10) infinite;
-    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
-    content: "";
-    height: 300%;
-    width: 300%;
-    left: -100%;
-    top: -110%;
-    opacity: 0.8;
-    position: fixed;
-    pointer-events: none;
-    z-index: -1;
+.back-link{
+    text-decoration: none;
 }
+.back2main{
+    font-family: serif;
+    position: fixed;
+    padding:6px; margin: 4px;
+    left: 0%;
+    background-color: rgba(255,250,148,1);
+    border: 1px solid rgba(47, 46, 22,0.14); border-radius: 0.75rem;
+    box-shadow: 0 0 1px 1px rgba(47, 46, 22,0.14);
+}
+
 .quintessential-regular {
   font-family: "Quintessential", serif;
   font-weight: 400;
@@ -86,7 +85,11 @@ body:after{
 }
 .work-links{
     display: flex;
+    font-size: 1.5rem;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem; margin-bottom:0;
 }
 
 .workhyper{
@@ -119,6 +122,7 @@ body:after{
 }
 table{
     font-size: 2rem;
+    margin: 4px; padding: 4px;
 }
 
 @media (max-width: 500px) {
@@ -133,6 +137,7 @@ table{
       }
       .work-links{
         flex-direction: column;
+        font-size: 1rem;
       }
       .tag{
         opacity: 0;

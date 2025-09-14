@@ -9,5 +9,5 @@ Not 'built' by me just taking ideas and other people's code and making it to my 
 Code might even be terrible but I'm trying to learn here.
 
 ## Sources
-- [grain effect](https://forum.readymag.com/t/add-grain-effect-to-website/3906/3)
+- [grain effect](https://forum.readymag.com/t/add-grain-effect-to-website/3906/3) no longer using
 - [card tilt effect](https://www.youtube.com/watch?v=x-7EAgNII50)
