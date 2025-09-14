@@ -1,5 +1,8 @@
 const container = document.querySelector('.container');
 const card = document.querySelector('.hero');
+const front = document.querySelector('.hero-front');
+const back = document.querySelector('.hero-back');
+let showingBack = false;
 
 container.addEventListener('mousemove',(e)=>{
     const rect = card.getBoundingClientRect();
@@ -20,3 +23,16 @@ container.addEventListener('mouseleave', () =>{
     card.style.transform= `rotateX(0) rotateY(0)`;
     card.style.boxShadow= `0 0 20px rgba(0,0,0,0)`;
 })
+
+card.addEventListener('click', () => {
+  showingBack = !showingBack;
+  if (showingBack) {
+    front.style.display = 'none';
+    back.style.display = 'block';
+    document.querySelector('.work-links').style.display= 'none';
+  } else {
+    back.style.display = 'none';
+    front.style.display='block';
+    document.querySelector('.work-links').style.display= 'flex';
+  }
+});
