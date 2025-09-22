@@ -28,7 +28,7 @@ a,a:visited{
     left: 0%;
     background-color: rgba(255,250,148,1);
     border: 1px solid rgba(47, 46, 22,0.14); border-radius: 0.5rem;
-    box-shadow: 0 0 1px 1px rgba(47, 46, 22,0.14);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0,0.3);
 }
 
 .quintessential-regular {
@@ -129,7 +129,15 @@ table{
     font-size: 2rem;
     margin: 4px; padding: 4px;
 }
-
+.question8{
+    justify-content: center; align-items:center;
+    padding: 20px 40px 20px 40px;
+    margin: 20px 0 20px 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 5px rgb(0,0,0,0.3);  
+    background-color: white;
+    width: 80dvw;
+}
 @media (max-width: 500px) {
       table {
         font-size: 1rem;
@@ -149,5 +157,11 @@ table{
       }
       .hero-back{
         width: 80dvw; height: auto;
+      }
+      .question8{
+        width: 70dvw;
+        font-size: 7px;
+        justify-content: left;
+        height: 100dvh;
       }
 }
