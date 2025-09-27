@@ -1,3 +1,6 @@
+# OVERHAUL VERSION
+This is V2 of my website because I am not satisfied with the current design. The last design or the origin branch was just a tester to get me to actually start making the actual website.
+
 # adham.forum
 I made this repo because I keep procrastinating making my portfolio @ [adham.forum](https://adham.forum). 
 
