@@ -1,0 +1,7 @@
+.master-header{
+    display: flex; flex-direction: row;
+    justify-content: left;
+    /*background-color: var(--main-dark);*/
+    width:100dvw;
+    padding: 0px 0px 0px 0px;
+}

@@ -1,0 +1,8 @@
+.master-footer{
+    display: flex; flex-direction: row;
+}
+
+.footer-text{
+    color: var(--main-dark);
+    font-size:12px;
+}

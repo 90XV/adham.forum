@@ -1,0 +1,26 @@
+.nav-class{
+    display: flex; flex-direction: row;
+    justify-content: center;
+}
+.navi{  color: var(--main-dark);}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.25rem;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.1);
+}
+
+
