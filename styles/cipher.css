@@ -1,0 +1,28 @@
+.ciphertable{
+    font-size:1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cipher-table{
+padding:1.5rem;
+}
+.alpha-table{
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top:auto; margin-bottom: auto;
+    justify-content: center;
+}
+.numa-table{
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top:auto; margin-bottom: auto;
+    justify-content: center;
+}
+
