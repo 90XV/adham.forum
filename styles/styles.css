@@ -90,6 +90,7 @@ body{
     }
     ul li a{
         color: var(--main-dark);
+        font-size: 1.05rem;
     }
     .cipher-table{
         font-size: 13px;
