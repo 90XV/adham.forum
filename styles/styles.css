@@ -91,6 +91,10 @@ body{
     ul li a{
         color: var(--main-dark);
     }
+    .cipher-table{
+        font-size: 13px;
+        width: 80dvw;
+    }
 }
 
 @keyframes floatAnimation {

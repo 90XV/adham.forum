@@ -1,18 +1,25 @@
 .ciphertable{
     font-size:1.5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-bottom: 1.5rem;
+    padding:20px;
+    width: 40dvw;
 }
 
 .cipher-table{
-padding:1.5rem;
+    display: flex;
+    align-items: center; justify-content: center;
+    flex-direction:column ;
+    padding: 10px 0px 10px 0px;
 }
+
 .alpha-table{
     display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap;
+    flex-direction: row; 
     align-items: center; 
     margin-top:auto; margin-bottom: auto;
     justify-content: center;
