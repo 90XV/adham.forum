@@ -37,6 +37,7 @@ body{
 }
 
 .hero1{
+    background-color: var(--beige-lighter);
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     color:var(--main-dark);
@@ -44,6 +45,7 @@ body{
     height: 30dvh;width:50dvw;
     border-radius: 48px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: var(--shadow-m);
 }
 .hero1div{justify-content: left;}
 .hero1divOut{display: none;}

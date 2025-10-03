@@ -1,7 +1,17 @@
 :root {
   --white:#FAF8F1;
   --beige:#FAEAB1;
+  --beige-lighter:#ffecbb;
   --main-light:#34656D;
   --main-dark:#334443;
-  
+
+  --shadow-s:
+  inset 0 1px 2px #ffffff30, /*top highlight*/
+  0 1px  2px #00000030, /*dark shadow*/
+  0 2px 4px #00000015;
+
+  --shadow-m:
+  inset 0 1px 2px #ffffff30, /*top highlight*/
+  0 2px 4px #00000030, /*dark shadow*/
+  0 4px 8px #00000015;
 }
