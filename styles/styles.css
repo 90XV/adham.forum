@@ -8,28 +8,51 @@ html, body{
 }
 
 body{
-    height: 100%;
+    height: 100dvh;
+    background-color: grey;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
 }
 
 .body-sect{
     display: flex;flex-direction: column;
+    width: 100%;height: 100%;
+    justify-content: center; align-items: center;
     margin-top: auto; margin-bottom: auto;
-    background-color: red;
 }
 
-.hero-1{
+.hero{
     display: flex; flex-direction: row;
-    width: 100%;
+    height: 100%; width: 100%;
     justify-content: center; align-items: center;
 }
 
+#hero2{
+    width: 100% ;height: 30dvh;
+    align-items: center; justify-content: center;
+}
+
 .welcome-div{
+    display: flex; flex-direction: column;
     width: 50%; height: 100%;
     background-color: blue;
+    padding: 0 2rem 0 2rem; 
 }
 
 .tech-div{
     display: flex; flex-direction: column;
-    width: 50%;
+    width: 50%; height: 100%;
     background-color: aqua;
+    padding: 0 2rem 0 2rem;
+}
+
+.find-me{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.find-group{
+    display: flex;flex-direction: row;
+    gap: 0.5rem;
 }
