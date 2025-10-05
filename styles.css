@@ -1,0 +1,35 @@
+@import url('colors.css');
+@import url('navbar.css');
+@import url('footer.css');
+
+html, body{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+}
+
+.body-sect{
+    display: flex;flex-direction: column;
+    margin-top: auto; margin-bottom: auto;
+    background-color: red;
+}
+
+.hero-1{
+    display: flex; flex-direction: row;
+    width: 100%;
+    justify-content: center; align-items: center;
+}
+
+.welcome-div{
+    width: 50%; height: 100%;
+    background-color: blue;
+}
+
+.tech-div{
+    display: flex; flex-direction: column;
+    width: 50%;
+    background-color: aqua;
+}
