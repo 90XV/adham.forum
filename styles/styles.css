@@ -35,15 +35,19 @@ body{
 .welcome-div{
     display: flex; flex-direction: column;
     width: 50%; height: 100%;
-    background-color: blue;
+
     padding: 0 2rem 0 2rem; 
 }
 
 .tech-div{
     display: flex; flex-direction: column;
     width: 50%; height: 100%;
-    background-color: aqua;
     padding: 0 2rem 0 2rem;
+}
+.stack-div{
+    display: flex; flex-direction: row;
+    align-items: center; justify-content: center;
+    gap: 4px;
 }
 
 .find-me{
