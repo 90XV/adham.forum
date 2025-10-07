@@ -1,9 +1,9 @@
 .contactbar{
     display: flex; flex-direction: row;
     align-items: center; justify-content: center;
-    gap: 4px;
+    gap: 16px;
 }
 
 .footer-p{
-    font-size: 10px;
+    font-size: auto;
 }
