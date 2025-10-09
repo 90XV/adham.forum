@@ -1,6 +1,7 @@
 @import url('colors.css');
 @import url('navbar.css');
 @import url('footer.css');
+@import url('classrooms.css');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 html, body{
@@ -172,7 +173,10 @@ body{
    .footer-sect{
     display: none;
     }
-
+    .classrooms{
+        flex:1 1 200px;
+        max-width: 300px;
+    }
 }
 
 @media screen and (max-width: 430px){
