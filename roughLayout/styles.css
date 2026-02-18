@@ -1,29 +1,47 @@
-*{margin:0; padding:0;}
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{margin:0; padding:0; font-family:"Share Tech Mono", monospace;}
+
 body{
-background-color: grey;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    background-color: var(--primary);
+    color:var(--highlight);
+}
+h1{
+    color:var(--lightcream);
+}
+
+p{
+    color:var(--lightcream);
 }
 .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    border:solid 5px;
+    margin-top:0dvh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: left;
+    text-align: left;
+    border:solid 0px; border-radius:25px;
+    width:60dvw; height:100dvh;
 }
+
 .hero1{
-    padding: 20px;
+    border: var(--highlight) 0px solid;
+    padding:0px 0px 10px 0px;
+}
+
+.hyprlinks{
+    color:var(--highlight);
 }
 
 .technologies{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
+
 .icon-n-name{
-    padding:10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap:0.5rem;
 }
 
@@ -31,4 +49,45 @@ background-color: grey;
     width: 120px; height:120px;
     background-color: aquamarine;
     border-radius: 15px; border: solid black 1px;
+}
+
+#combo{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.portfolio-section{
+    display: flex;flex-direction: column;
+    justify-content: center; align-items: center;
+    width:60dvw;
+    padding-top:10px;
+}
+
+.photography{
+    height: 100dvh; width: 100%;
+}
+
+.personal-dev{
+    height: 100dvh;width: 100%;
+    display: flex; flex-direction: column;
+}
+.carousel{
+    display: flex; flex-direction: row;
+    justify-content: center;align-items: center;
+    gap:8px;
+    padding:10px;
+}
+.mock-image{
+    width: 200px; height: 150px;
+    background-color: black;
+    border-radius:25px;
+}
+.mock-screenshot{
+    width: 320px;height: 180px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.portweb{
+    padding:0 10px 10px 0;
 }
