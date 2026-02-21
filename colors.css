@@ -1,5 +1,6 @@
 :root{
     --primary: rgb(25, 30, 41);
+    --darker-primary: rgb(24, 29, 37);
     --highlight: rgb(208, 219, 243);
     --lightcream: rgb(255, 253, 235);
 }
