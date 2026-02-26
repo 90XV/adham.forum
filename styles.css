@@ -20,15 +20,14 @@ p{
 .main{
     margin-top:0dvh;
     display: flex; flex-direction: column;
-    justify-content: center; align-items: left;
+    justify-content: center; align-items: center;
     text-align: left;
-    border:solid 0px; border-radius:25px;
-    width:60dvw; height:100dvh;
+    width:90dvw; height:100dvh;
 }
 
 .hero1{
-    border: var(--highlight) 0px solid;
     padding:0px 0px 10px 0px;
+    width: 70%;
 }
 
 .hyprlinks{
@@ -36,6 +35,7 @@ p{
 }
 
 .technologies{
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,64 +48,6 @@ p{
     gap:0.5rem;
 }
 
-#mockup{
-    width: 120px; height:120px;
-    background-color: aquamarine;
-    border-radius: 15px; border: solid black 1px;
-}
-.logos{
-    width: 50px;
-    padding-bottom:10px;
-}
-
-.portfolio-section{
-    display: flex;flex-direction: column;
-    justify-content: center; align-items: center;
-    width:60dvw;
-    padding-top:10px;
-}
-
-.photography{
-    width: 100%;
-}
-.carousel{
-    padding:1rem;
-    display: flex; flex-direction: column;
-    justify-content: center;align-items: center;
-}
-.c-top{
-    display: flex;flex-direction: row;
-    justify-content: center;align-items: center;
-    gap:1rem;
-}
-
-.dev{
-    width: 100%;
-    display: flex; flex-direction: column;
-}
-
-.portweb{
-    padding:20px;
-    border:none 2px var(--lightcream);
-    gap:1rem;
-}
-
-.portweb:hover{
-    background-color: var(--darker-primary);
-}
-#webapp{
-    height:400px;
-}
-.port-sc{
-    display: flex; flex-direction: column;
-    justify-content: center; align-items: center;
-    gap:0.5rem;
-    width:100%; padding:10px 0px 10px 0px;
-}
-.website-sc{
-    width:100%;
-    border-radius: 10px;
-}
 
 @media screen and (max-width:400px){
     body{
