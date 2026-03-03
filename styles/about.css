@@ -1,0 +1,5 @@
+.aboutme{
+    display: flex;flex-direction: column;
+    justify-content: center; align-items: left;
+    height:100dvh; width: 75dvw;
+}
