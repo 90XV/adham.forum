@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('/styles/contact.css');@import url('/styles/about.css');
 *{margin:0; padding:0; font-family:"Share Tech Mono", monospace;}
 html{
     scroll-behavior: smooth;
@@ -23,12 +22,16 @@ a{
 
 .about{
     display: flex; flex-direction:column;
-    justify-content: center; align-items: center;
-    height:100dvh;
+    justify-content: baseline; align-items: center;
+    height:60dvh;width:98%; margin: 0px; padding:0px;
 }
 .hero-sec{
     display: flex; flex-direction:column;
     height:160px;width:80%; 
+}
+.about-sec{
+    display: flex; flex-direction:column;
+    height:160px;width:80%; gap:10px;
 }
 .name{
     font-size:52px;
@@ -49,21 +52,34 @@ p{
 .tech{
     padding:8px;
     background:rgb(77, 94, 129);
-    border:1px solid var(--highlight);  
+}
+.job,.edu{
+    display: flex; flex-direction:row;
+    justify-content: space-between;
+    color:var(--main-text2);
 }
 @media screen and (max-width:500px){
-   .main{
-    margin:0px;padding:0px;
-    justify-content: baseline; 
-   }
-   .hero-sec{
-   height: 240px; width:90%;
+    .main{
+        margin:0px;padding:0px;
+        justify-content: baseline; 
+    }
+    .hero-sec{
+        height: 240px; width:90%;
     }
     .technologies{
         height: 400px;width:90%;
     }
+    .about-sec{
+        width:90%;
+    }
     .icon-n-name{
         display: flex; flex-direction:column; gap:20px;
+    }
+    .job, .edu{
+         flex-direction:column;   
+    }
+    .job #duration, .edu #duration{
+    color:var(--highlight);
     }
 }
 

@@ -4,11 +4,4 @@
     --highlight: rgb(208, 219, 243);
     --main-text: rgb(255, 253, 235);
     --main-text2: rgb(216, 214, 196);
-
-}
-[theming="light"]{
-    --primary:rgb(208, 219, 243);
-    --intense-primary:rgb(239, 244, 255);
-    --highlight:rgb(24, 29, 37);
-    --main-text:rgb(25, 30, 41);
 }
