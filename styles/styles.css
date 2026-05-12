@@ -51,7 +51,19 @@ p{
     background:rgb(77, 94, 129);
     border:1px solid var(--highlight);  
 }
-@media screen and (max-width:430px){
-   
+@media screen and (max-width:500px){
+   .main{
+    margin:0px;padding:0px;
+    justify-content: baseline; 
+   }
+   .hero-sec{
+   height: 240px; width:90%;
+    }
+    .technologies{
+        height: 400px;width:90%;
+    }
+    .icon-n-name{
+        display: flex; flex-direction:column; gap:20px;
+    }
 }
 
