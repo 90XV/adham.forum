@@ -8,6 +8,7 @@ body{
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
     background-color: var(--primary);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
     color:var(--highlight);
     cursor:cell; color:var(--main-text);
 }
@@ -30,14 +31,18 @@ a{
     height:160px;width:80%; 
 }
 .about-sec{
+    border: solid 1px rgb(63, 63, 63);
+    border-radius: 15px;
     display: flex; flex-direction:column;
-    height:160px;width:80%; gap:10px;
+    width:80%; gap:10px;
+    padding:20px;
 }
 .name{
     font-size:52px;
 }
 p{
     font-size:20px;
+    text-align: justify;
 }
 
 .links{
@@ -47,7 +52,7 @@ p{
 }
 .technologies{
     display: flex; flex-direction:column;
-    height:160px;width:80%; 
+    width:80%; height: fit-content;
 }
 .tech{
     padding:8px;
@@ -57,6 +62,47 @@ p{
     display: flex; flex-direction:row;
     justify-content: space-between;
     color:var(--main-text2);
+}
+
+.portfolio{
+    display: flex; flex-direction:column;
+    justify-content: baseline; align-items: center;
+    width:98%;
+}
+
+.port-title{
+    display: flex; flex-direction:column;
+    justify-content: center; align-items: left;
+    width:80%;
+    padding:0px 0px 10px 0px;
+}
+
+.port-section{
+    display: flex; flex-direction:column;
+    justify-content: center; align-items: left;
+    width:80%; padding:20px;
+    border: solid 1px rgb(63, 63, 63);
+    border-radius: 15px;
+}
+
+.picture-grid{
+    display: flex; flex-direction:row;
+    flex-wrap: wrap; gap:10px;
+    justify-content: center; align-items: center;
+    width: 100%; height: auto;
+    padding: 10px;
+}
+#port1::before{
+    background-image: url('/images/image6.jpg');
+    background-color: rgba(0, 0, 0,0.5);
+    background-size: 100% auto; background-repeat: no-repeat;
+}
+#port1:hover{
+    backdrop-filter: blur(100px);   
+}
+img{
+    height: 340px; width: auto;
+    border-radius: 15px;
 }
 @media screen and (max-width:500px){
     .main{
@@ -69,7 +115,10 @@ p{
     .technologies{
         height: 400px;width:90%;
     }
-    .about-sec{
+    .portfolio{
+        width: 98%;
+    }
+    .about-sec, .port-section,.port-title{
         width:90%;
     }
     .icon-n-name{
@@ -80,6 +129,9 @@ p{
     }
     .job #duration, .edu #duration{
     color:var(--highlight);
+    }
+    img{
+    height: auto; width: 100%;
     }
 }
 
