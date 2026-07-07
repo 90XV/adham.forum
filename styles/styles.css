@@ -8,130 +8,65 @@ body{
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
     background-color: var(--primary);
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
     color:var(--highlight);
     cursor:cell; color:var(--main-text);
 }
+p,a{
+    font-size:20px;
+}
+
 a{
     color:var(--highlight);
 }
 .main{
-    display: flex; flex-direction:column;
+    display: flex; flex-direction: column;
     justify-content: center; align-items: center;
-    height:100dvh; width:98%;
+    height: 100dvh; width: 80%;
 }
-
-.about{
-    display: flex; flex-direction:column;
-    justify-content: baseline; align-items: center;
-    height:60dvh;width:98%; margin: 0px; padding:0px;
-}
-.hero-sec{
-    display: flex; flex-direction:column;
-    height:160px;width:80%; 
-}
-.about-sec{
-    border: solid 1px rgb(63, 63, 63);
-    border-radius: 15px;
-    display: flex; flex-direction:column;
-    width:80%; gap:10px;
-    padding:20px;
-}
-.name{
-    font-size:52px;
-}
-p{
-    font-size:20px;
-    text-align: justify;
-}
-
-.links{
-    display: flex; flex-direction:row;
-    gap: 20px;
-    padding:20px 0 20px 0;
+.hero{
+    width: 100%; 
+    padding: 40px;
 }
 .technologies{
-    display: flex; flex-direction:column;
-    width:80%; height: fit-content;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    width: 100%; height: fit-content;
+    padding:40px;
+}
+
+.tech-buttons{ 
+    width: 100%; 
+    gap: 12px; 
+    display: flex; flex-direction: row;
+    justify-content: space-between; align-items: center;
 }
 .tech{
-    padding:8px;
-    background:rgb(77, 94, 129);
-}
-.job,.edu{
-    display: flex; flex-direction:row;
-    justify-content: space-between;
-    color:var(--main-text2);
+    background-color: var(--highlight);
+    color:var(--primary); 
+    border:solid var(--highlight) 1px;
+    padding: 12px;
 }
 
-.portfolio{
-    display: flex; flex-direction:column;
-    justify-content: baseline; align-items: center;
-    width:98%;
-}
-
-.port-title{
-    display: flex; flex-direction:column;
-    justify-content: center; align-items: left;
-    width:80%;
-    padding:0px 0px 10px 0px;
-}
-
-.port-section{
-    display: flex; flex-direction:column;
-    justify-content: center; align-items: left;
-    width:80%; padding:20px;
-    border: solid 1px rgb(63, 63, 63);
-    border-radius: 15px;
-}
-
-.picture-grid{
-    display: flex; flex-direction:row;
-    flex-wrap: wrap; gap:10px;
-    justify-content: center; align-items: center;
-    width: 100%; height: auto;
-    padding: 10px;
-}
-#port1::before{
-    background-image: url('/images/image6.jpg');
-    background-color: rgba(0, 0, 0,0.5);
-    background-size: 100% auto; background-repeat: no-repeat;
-}
-#port1:hover{
-    backdrop-filter: blur(100px);   
-}
-img{
-    height: 340px; width: auto;
-    border-radius: 15px;
-}
 @media screen and (max-width:500px){
-    .main{
-        margin:0px;padding:0px;
-        justify-content: baseline; 
+    .tech-buttons{ 
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
     }
-    .hero-sec{
-        height: 240px; width:90%;
+}
+
+@media screen and (max-width:750px){
+    .main{
+        margin:48px;
     }
     .technologies{
-        height: 400px;width:90%;
+        padding:0px;
     }
-    .portfolio{
-        width: 98%;
+    .tech-buttons{ 
+        align-items: center;
+        justify-content: space-evenly; 
     }
-    .about-sec, .port-section,.port-title{
-        width:90%;
-    }
-    .icon-n-name{
-        display: flex; flex-direction:column; gap:20px;
-    }
-    .job, .edu{
-         flex-direction:column;   
-    }
-    .job #duration, .edu #duration{
-    color:var(--highlight);
-    }
-    img{
-    height: auto; width: 100%;
+    .tech{
+        width: 100%;
+        padding:20px;
     }
 }
-
