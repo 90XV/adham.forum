@@ -83,7 +83,8 @@ a{
     background:radial-gradient(circle at bottom, var(--intense-primary),var(--black-blue));
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
-    height: auto; width: 100%;
+    height: auto; min-height: 100dvh;
+    width: 100%;
     padding:40px 0px 40px 0px;
 }
 
