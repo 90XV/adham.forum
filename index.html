@@ -11,6 +11,8 @@
         <title>adham.forum</title>
     </head>
     <body>
+        <div class="custom-cursor dot"></div>
+        <div class="custom-cursor outline"></div>
         <div class="main">
             <div class="hero">
                 <div class="name-div">
@@ -37,7 +39,7 @@
                     color:var(--highlight);
                     padding:4px;
                     text-decoration: none;
-                    font-size:24px;"
+                    font-size:18px;"
                 >scroll!
                 </a>
             </div>
@@ -122,6 +124,32 @@
             `adham.forum ${year}`;
         }
         currentTime();
+
+        const cursorDot = document.querySelector('.dot');
+        const cursorOutline = document.querySelector('.outline');
+
+        window.addEventListener('mousemove', (e) => {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.style.left = `${posX}px`;
+        cursorOutline.style.top = `${posY}px`;
+        });
+
+        //Hover scaling when over interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .expand-box');
+
+        interactiveElements.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            cursorOutline.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursorOutline.classList.remove('hovered');
+        });
+        });
     </script>
     
 </html>

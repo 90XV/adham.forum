@@ -22,27 +22,72 @@
                 color:var(--highlight);
                 padding:4px;
                 position:absolute; top:0px; left:0px; 
-                font-size:28px;
+                font-size:18px;
             "
             >
             <<
         </button>
+        <div class="custom-cursor dot"></div>
+        <div class="custom-cursor outline"></div>
+    
         <div class="portfolio">
-                <div class="port-title">
+                <div class="port-title" style="width: 100%; align-items:baseline;">
                     <h1 id="portfolioID">Portfolio</h1>
                     <p >Below are some of my works. Feel free to contact me via my links or email below! </p>
                 </div>
-                <div class="port-section" id="port1">
+                <div class="port-section" id="portfolio1">
                     <h3>Wedding Reception #1</h3>
                     <p>In Janurary 2026 I had the honour to be the photographer for a wedding in my local community.</p>
-                    <div class="picture-grid" id="picture-grid1">
-                        <img src="/images/image1.jpg" alt="Wedding 1 Picture 1">
-                        <img src="/images/image2.jpg" alt="Wedding 1 Picture 1">
-                        <img src="/images/image3.jpg" alt="Wedding 1 Picture 1">
-                        <img src="/images/image4.jpg" alt="Wedding 1 Picture 1">
-                        <img src="/images/image5.jpg" alt="Wedding 1 Picture 1">
+                    <div class="grid-holder" style="margin-top:20px;display:flex; flex-direction:column; width: 100%; justify-content: center; align-items: center;">
+                        <div class="picture-grid" id="picture-grid1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="port-section" id="portfolio2">
+                    <h3>Photography & Design @ St Angelas School</h3>
+                    <p>As well as being a teacher I am also in charge of photography and graphics.</p>
+                    <div class="grid-holder" style="margin-top:20px;display:flex; flex-direction:column; width: 100%; justify-content: center; align-items: center;">
+                        <div class="picture-grid" id="picture-grid1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                            <img src="https://placehold.co/600x400" alt="Wedding 1 Picture 1">
+                        </div>
                     </div>
                 </div>
             </div>
     </body>
+    <script>
+        const cursorDot = document.querySelector('.dot');
+        const cursorOutline = document.querySelector('.outline');
+
+        window.addEventListener('mousemove', (e) => {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.style.left = `${posX}px`;
+        cursorOutline.style.top = `${posY}px`;
+        });
+
+        //Hover scaling when over interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .expand-box');
+
+        interactiveElements.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            cursorOutline.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursorOutline.classList.remove('hovered');
+        });
+        });
+    </script>
 </html> 
