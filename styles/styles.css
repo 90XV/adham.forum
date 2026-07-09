@@ -35,19 +35,26 @@ a{
     margin-right:40px;
     display: flex; flex-direction: column;
     justify-content: center; align-items: baseline;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .links{
     display: flex; flex-direction: row;
     gap:16px;
     text-align: center; 
-    
+}
+
+.hyprlinks{
+    transition: ease-out 250ms;
+}
+.hyprlinks:hover{
+    font-size:18px;
+    transition: ease-in 125ms;
 }
 .technologies{
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
     width: 30%; height: fit-content;
-    opacity: 1%;
+    opacity: 0%;
     padding:28px; margin-top: 0px;
     box-sizing: border-box;
     border:solid rgb(40, 44, 53) 2px;
@@ -75,12 +82,16 @@ a{
     color:var(--main-text); 
     border:solid var(--highlight) 1px;
     border-radius: var(--border);
+    background-position-x: -200px;
     padding: 12px; 
     text-decoration: none;
+    transition: ease-out 250ms;
 }
 .tech:hover {
-        background-color: var(--highlight);
-        color: var(--intense-primary);
+    background-color: var(--highlight);
+    background-position-x: 0px;
+    color: var(--intense-primary);
+    transition: ease-in 250ms;
 }
 
 .tech-desc{
@@ -186,8 +197,6 @@ a{
 .picture-grid img{
     width: 100%;    
 }
-
-
 .custom-cursor {
   position: fixed;
   top: 0;
@@ -296,6 +305,11 @@ a{
         border:none;
         border-radius: var(--border-mobile);
     }
+    .hero:hover + .technologies,.technologies:hover{
+        opacity: 100%;
+        transition: ease-in 250ms;
+        background: none;
+    }   
     .desktop-notif{
         display: flex;
     }
@@ -323,6 +337,10 @@ a{
     }
     .competencies{
         display: none;
+    }
+    .picture-grid{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
     .picture-grid img{
         width: 100%;
