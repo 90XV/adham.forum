@@ -9,8 +9,7 @@ html{
 body{
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
-    /*background: var(--intense-primary);*/
-    background:radial-gradient(circle at top, var(--primary), #000000);
+    background:radial-gradient(circle at top, var(--primary),var(--black-blue));
     cursor:none;
     color:var(--main-text);
 }
@@ -23,32 +22,43 @@ a{
 }
 .main{
     background:radial-gradient(circle at top, var(--primary), var(--black-blue));
-    display: flex; flex-direction: column;
+    display: flex; flex-direction: row;
     justify-content: center; align-items: center;
     height: 100dvh; width: 100%;
+    padding-bottom: 40px;
+    box-sizing: border-box;
 }
 
 .hero{
-    width: 80%; height: 50%;
-    padding: 0px;
-    margin-bottom:0px;
+    box-sizing: border-box;
+    width: auto; height: 90%;
+    margin-right:40px;
     display: flex; flex-direction: column;
     justify-content: center; align-items: baseline;
+    padding-bottom: 60px;
 }
 .links{
     display: flex; flex-direction: row;
     gap:16px;
+    text-align: center; 
+    
 }
 .technologies{
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
-    width: 80%; height: fit-content;
+    width: 30%; height: fit-content;
+    opacity: 1%;
     padding:28px; margin-top: 0px;
     box-sizing: border-box;
     border:solid rgb(40, 44, 53) 2px;
     border-radius: var(--border);
-    background-color: var(--intense-primary);
+    background:none;transition: ease-in 250ms;
     box-shadow:  0px 0px 5px 0px rgba(208, 219, 243, 0.1);
+}
+.hero:hover + .technologies,.technologies:hover{
+    opacity: 100%;
+    background-color: var(--intense-primary);
+    transition: ease-in 250ms;
 }
 
 .tech-buttons{ 
@@ -88,18 +98,34 @@ a{
     padding:40px 0px 40px 0px;
 }
 
-.about{
+.about, .contact{
     display: flex; flex-direction: column;
     align-items: baseline; justify-content: center;
-    height: auto; width: 80%;
+    height: auto; width: 90%; 
 
-    padding:28px; margin-top: 40px;
+    padding:28px; margin: 40px 20px 0px 20px;
     box-sizing: border-box;
     border:solid rgb(40, 44, 53) 2px;
     border-radius: var(--border);
-    background-color: var(--intense-primary);
     box-shadow:  0px 0px 5px 0px rgba(208, 219, 243, 0.1);
+
+    transition: ease-in 250ms;
 }
+
+.about:hover, .contact:hover{
+    background-color: var(--intense-primary);
+    border-radius: 0px; border:none;
+    transition: ease-in 250ms;
+}
+
+.about-page{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    min-height: 100dvh; width: 100%;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
 .desktop-notif{
         display: none;
         color:var(--main-text2);
@@ -190,6 +216,14 @@ a{
   background-color: rgba(255, 255, 255, 0.2);
   border-color: transparent;
 }
+#footer-class{
+    display: flex; flex-direction: row; 
+    width: 100%; 
+    background:none; 
+    position: absolute; bottom:0px;
+    justify-content: center; align-items: center;
+    font-size:12px; color:var(--main-text2);
+}
 
 
 
@@ -204,21 +238,34 @@ a{
     .tech{
         width: 100%;
     }
+    h4{
+        font-size:14px;
+    }
 }
 
 @media screen and (max-width:750px){
-    .main{
-        height:fit-content;
+    *{
+        cursor: cell;
     }
-    .hero, .technologies,.about{
-        width: 90%;
+    .custom-cursor{
+        display:none;
+    }
+    .main{
+        flex-direction: column;
+        min-height:100dvh;
+        height: fit-content;
+        box-sizing: border-box;
+    }
+    .hero, .technologies,.about, .contact{
+        width: 90%;margin-right: 0px;
     }
     .links{
-        justify-content: space-between;
+        justify-content: space-between;  align-items: center;
         width: 100%;
         padding: 20px 0px 0px 0px;
     }
     .hero{
+        height:fit-content;
         border-radius: var(--border-mobile);
         background: none;
         padding:28px;
@@ -227,19 +274,24 @@ a{
         margin-top:40px;
     }
     .technologies{
-         margin-top: 40px;
-         border-radius: var(--border-mobile);
-         border:none;
-         background: none;
-         box-sizing: border-box;
+        opacity: 100%;
+        height: fit-content;
+        margin-top: 40px;
+        border-radius: var(--border-mobile);
+        border:none;
+        background: none;
+        box-sizing: border-box;
     }
     .pullstring{
         display: none;
     }
+    .about{
+        height: fit-content;
+    }
     .secondary{
         padding-top:0px;
     }
-    .about,.portfolio{
+    .about,.portfolio, .contact{
         background: none;
         border:none;
         border-radius: var(--border-mobile);
@@ -270,6 +322,12 @@ a{
         align-items: baseline;
     }
     .competencies{
+        display: none;
+    }
+    .picture-grid img{
+        width: 100%;
+    }
+    #footer-class{
         display: none;
     }
 }

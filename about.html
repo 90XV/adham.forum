@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="/styles/styles.css">
+        <link rel ="stylesheet" href="/styles/colors.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+        <link rel="manifest" href="/ico/site.webmanifest">
+        <title>adham.forum</title>
+    </head>
+    <body>
+        <button 
+            onclick="history.back()"
+            style="
+                background-color:var(--primary);
+                width:80px;
+                border-radius: 4px;
+                border:none;
+                box-shadow: 0px 0px 5px 0px rgba(208, 219, 243, 0.1);
+                color:var(--highlight);
+                padding:4px;
+                position:absolute; top:0px; left:0px; 
+                font-size:18px;
+            "
+            >
+            <<
+        </button>
+        <div class="custom-cursor dot"></div>
+        <div class="custom-cursor outline"></div>
+    
+        <div class="about-page">
+            <div class="about">
+                    <h1>About Me</h1> <p class="desktop-notif">More on desktop site!</p>
+                    <div class="about-divs">
+                        <h3 style="margin:0px 0px 10px 0px">Employment</h3>
+                        <div id="job1"class="job">
+                            <h4>ICT and Science Teacher</h4><h4 id="duration">Sept 2025 - Present</h4>
+                        </div>
+                        <div class="competencies">
+                            <ul style="margin:8px 0px 8px 16px; color:var(--main-text2); ">
+                                <li>Year 7 Science [SPN21 Syllabus]</li>
+                                <li>Year 4,5,7,8 ICT</li>
+                                <li>Year 9 to 11 [IGCSE 0417 ICT]</li>
+                            </ul>
+                        </div>
+                        <div id="job2"class="job">
+                            <h4>Service Crew and Barista</h4><h4 id="duration">June 2025 - July 2025</h4>
+                        </div>
+                        <div class="competencies">
+                            <ul style="margin:8px 0px 8px 16px; color:var(--main-text2); ">
+                                <li>Espresso based drinks [expresso, latte, cappucino]</li>
+                                <li>Milkshakes, Juices and Mocktails</li>
+                                <li>Simple Food Prep</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-divs">
+                        <h3 style="margin:0px 0px 10px 0px">Education</h3>
+                        <div id="edu1"class="edu">
+                            <h4>Diploma in Electrical, Information and Communications Engineering</h4><h4 id="duration">April 2022 - March 2025</h4>
+                        </div>
+                        <div class="competencies">
+                            <ul style="margin:8px 0px 8px 16px; color:var(--main-text2); ">
+                                <li>Web Development [Python + Flask, Gemini Integration, yt-dlp, OpenAI Whisper]</li>
+                                <li>Linux environments [MinGW, WSL, Arch Linux]</li>
+                                <li>VPS Management [uvicorn, nginx]</li>
+                                <li>Machine Learning [Python Jupyter Notebook, scikit-learn]</li>
+                                <li>Computer Graphics [C++ with OpenGL, Pov-ray]</li>
+                                <li>General electrical engineering knowledge</li>
+                            </ul>
+                        </div>
+                        <div id="edu2"class="edu">
+                            <h4>G.C.E 'A' Level</h4><h4 id="duration">February 2019 - November 2020</h4>
+                        </div>
+                        <div class="competencies">
+                            <p style="font-size:16px;">Computer Science, Physics and Mathematics</p>
+                            <ul style="margin:8px 0px 8px 16px; color:var(--main-text2); ">
+                                <li>100% Attendance Award</li>
+                                <li>Tutong Beach Cleanup Campaign</li>
+                                <li>Temasek Junior College, Singapore Twinning Programming; Photographer and Student Diplomat</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="contact">
+                <h1>Contact me</h1>
+                <p style="color: var(--main-text2);">email: <span style="font-family:'Share Tech Mono', monospace";"><a href="mailto:adhamdarwishz@gmail.com">adhamdarwishz@gmail.com</a></span></p>
+                <p style="color: var(--main-text2);">instagram: <span style="font-family:'Share Tech Mono', monospace";"><a href="https://instagram.com/adhamdarwishz">@adhamdarwishz</a></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        const cursorDot = document.querySelector('.dot');
+        const cursorOutline = document.querySelector('.outline');
+
+        window.addEventListener('mousemove', (e) => {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.style.left = `${posX}px`;
+        cursorOutline.style.top = `${posY}px`;
+        });
+
+        //Hover scaling when over interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .expand-box');
+
+        interactiveElements.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            cursorOutline.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursorOutline.classList.remove('hovered');
+        });
+        });
+    </script>
+    
+</html>
