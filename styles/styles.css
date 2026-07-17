@@ -19,6 +19,7 @@ p,a{
 
 a{
     color:var(--highlight);
+    cursor:none;
 }
 .main{
     background:radial-gradient(circle at top, var(--primary), var(--black-blue));
@@ -247,6 +248,15 @@ a{
     .tech{
         width: 100%;
     }
+    .hyprlinks{
+        width: 100%
+    }
+    .links{
+        box-sizing: border-box;
+        display:grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
     h4{
         font-size:14px;
     }
@@ -272,6 +282,7 @@ a{
         justify-content: space-between;  align-items: center;
         width: 100%;
         padding: 20px 0px 0px 0px;
+        
     }
     .hero{
         height:fit-content;
